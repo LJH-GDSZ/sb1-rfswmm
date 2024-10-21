@@ -1,0 +1,36 @@
+.container {
+  padding: 20rpx;
+}
+
+.order-item {
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-header, .order-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.order-items {
+  margin-bottom: 10rpx;
+}
+
+.order-items text {
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-actions button {
+  margin-left: 10rpx;
+}

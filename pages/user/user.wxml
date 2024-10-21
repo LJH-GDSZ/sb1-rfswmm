@@ -1,0 +1,19 @@
+<view class="container">
+  <block wx:if="{{isLoggedIn}}">
+    <view class="user-info">
+      <image src="/assets/default-avatar.png" class="avatar" />
+      <text>{{userInfo.phone}}</text>
+    </view>
+    <view class="menu-list">
+      <view class="menu-item" wx:for="{{menuItems}}" wx:key="title" bindtap="onMenuItemTap" data-index="{{index}}">
+        <image src="{{item.icon}}" class="menu-icon" />
+        <text>{{item.title}}</text>
+        <image src="/assets/arrow-right.png" class="arrow-icon" />
+      </view>
+    </view>
+    <button class="logout-btn" bindtap="logout">退出登录</button>
+  </block>
+  <block wx:else>
+    <button class="login-btn" bindtap="goToLogin">登录/注册</button>
+  </block>
+</view>

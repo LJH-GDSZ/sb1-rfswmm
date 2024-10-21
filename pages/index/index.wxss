@@ -1,0 +1,142 @@
+.container {
+  padding: 20rpx;
+  padding-bottom: 120rpx;
+}
+
+.search-bar {
+  margin-bottom: 20rpx;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ddd;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.category {
+  padding: 10rpx 20rpx;
+  margin: 10rpx;
+  background-color: #f0f0f0;
+  border-radius: 20rpx;
+}
+
+.category.selected {
+  background-color: #007AFF;
+  color: white;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.restaurant-item {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-item image {
+  width: 200rpx;
+  height: 200rpx;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  flex: 1;
+  padding: 20rpx;
+}
+
+.restaurant-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.restaurant-category {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.rating {
+  font-size: 28rpx;
+  color: #ff9900;
+  margin-right: 10rpx;
+}
+
+.review-count {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.restaurant-details {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.restaurant-details text {
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.add-to-cart button {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 0;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 30rpx;
+}
+
+.add-to-cart input {
+  width: 80rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+  margin: 0 10rpx;
+}
+
+.confirm-order-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20rpx;
+  background-color: #fff;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.confirm-order {
+  width: 100%;
+  background-color: #007AFF;
+  color: white;
+}

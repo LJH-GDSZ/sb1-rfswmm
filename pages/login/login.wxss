@@ -1,0 +1,27 @@
+.container {
+  padding: 40rpx;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  margin-top: 40rpx;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.links text {
+  color: #007AFF;
+}

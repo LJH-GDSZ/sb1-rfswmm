@@ -1,0 +1,122 @@
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.image-swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.image-swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section {
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: -20rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.restaurant-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.restaurant-category {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.rating {
+  font-size: 32rpx;
+  color: #ff9900;
+  margin-right: 10rpx;
+}
+
+.review-count {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.restaurant-price {
+  font-size: 32rpx;
+  color: #e74c3c;
+  margin-bottom: 10rpx;
+}
+
+.restaurant-details {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.restaurant-details text {
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.ingredients-section, .recommendations-section {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.ingredients-list text {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 5rpx;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommendation-item {
+  width: 48%;
+  margin-bottom: 20rpx;
+  background-color: #f8f8f8;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.recommendation-item image {
+  width: 100%;
+  height: 200rpx;
+  object-fit: cover;
+}
+
+.recommendation-info {
+  padding: 10rpx;
+}
+
+.recommendation-name {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.recommendation-rating {
+  font-size: 24rpx;
+  color: #ff9900;
+}

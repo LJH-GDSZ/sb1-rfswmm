@@ -1,0 +1,9 @@
+<view class="container">
+  <input type="number" placeholder="请输入手机号" bindinput="onPhoneInput" value="{{phone}}" />
+  <input type="password" placeholder="请输入密码" bindinput="onPasswordInput" value="{{password}}" />
+  <button bindtap="login">登录</button>
+  <view class="links">
+    <text bindtap="goToRegister">注册新用户</text>
+    <text bindtap="goToResetPassword">忘记密码</text>
+  </view>
+</view>

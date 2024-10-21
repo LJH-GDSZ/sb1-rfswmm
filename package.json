@@ -1,0 +1,15 @@
+{
+  "name": "campus-delivery-app",
+  "version": "1.0.0",
+  "description": "校园外卖模板小程序",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

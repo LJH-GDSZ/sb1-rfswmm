@@ -1,0 +1,46 @@
+<view class="container">
+  <swiper class="image-swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+    <swiper-item>
+      <image src="{{restaurant.image}}" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="{{restaurant.image}}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <view class="info-section">
+    <view class="restaurant-name">{{restaurant.name}}</view>
+    <view class="restaurant-category">{{restaurant.category}}</view>
+    <view class="restaurant-rating">
+      <text class="rating">{{restaurant.rating}}</text>
+      <text class="review-count">({{restaurant.reviewCount}}条评价)</text>
+    </view>
+    <view class="restaurant-price">{{restaurant.price}}</view>
+    <view class="restaurant-details">
+      <text>营业时间：{{restaurant.openTime}}</text>
+      <text>配送时间：{{restaurant.deliveryTime}}</text>
+      <text>地址：{{restaurant.address}}</text>
+    </view>
+  </view>
+
+  <view class="ingredients-section">
+    <view class="section-title">制作材料</view>
+    <view class="ingredients-list">
+      <text>主料：鸡肉、土豆、胡萝卜</text>
+      <text>调料：盐、糖、酱油、料酒</text>
+    </view>
+  </view>
+
+  <view class="recommendations-section">
+    <view class="section-title">其他推荐</view>
+    <view class="recommendations-list">
+      <view class="recommendation-item" wx:for="{{recommendations}}" wx:key="id" bindtap="goToRestaurantDetail" data-id="{{item.id}}">
+        <image src="{{item.image}}" mode="aspectFill" />
+        <view class="recommendation-info">
+          <view class="recommendation-name">{{item.name}}</view>
+          <view class="recommendation-rating">{{item.rating}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="search-bar">
+    <input type="text" placeholder="搜索餐厅或美食" bindinput="onSearch" bindconfirm="onSearchConfirm" value="{{searchValue}}" confirm-type="search" />
+  </view>
+  
+  <view class="categories">
+    <view class="category {{selectedCategory === item ? 'selected' : ''}}" 
+          wx:for="{{categories}}" 
+          wx:key="index" 
+          bindtap="selectCategory" 
+          data-category="{{item}}">{{item}}</view>
+  </view>
+  
+  <view class="restaurant-list">
+    <view class="restaurant-item" wx:for="{{filteredRestaurants}}" wx:key="id" bindtap="goToRestaurantDetail" data-id="{{item.id}}">
+      <image src="{{item.image}}" mode="aspectFill" />
+      <view class="restaurant-info">
+        <view class="restaurant-name">{{item.name}}</view>
+        <view class="restaurant-category">{{item.category}}</view>
+        <view class="restaurant-rating">
+          <text class="rating">{{item.rating}}</text>
+          <text class="review-count">({{item.reviewCount}}条评价)</text>
+        </view>
+        <view class="restaurant-details">
+          <text>营业时间：{{item.openTime}}</text>
+          <text>起送价：{{item.price}}</text>
+          <text>配送时间：{{item.deliveryTime}}</text>
+          <text>地址：{{item.address}}</text>
+        </view>
+        <view class="add-to-cart" catchtap="stopPropagation">
+          <button catchtap="decreaseQuantity" data-id="{{item.id}}">-</button>
+          <input type="number" value="{{item.quantity || 0}}" catchinput="updateQuantity" data-id="{{item.id}}" />
+          <button catchtap="increaseQuantity" data-id="{{item.id}}">+</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="confirm-order-container" wx:if="{{hasItemsInCart}}">
+  <button class="confirm-order" bindtap="confirmOrder">确认订单</button>
+</view>

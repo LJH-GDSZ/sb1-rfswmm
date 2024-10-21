@@ -1,0 +1,14 @@
+.container {
+  padding: 40rpx;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+button {
+  margin-top: 40rpx;
+}
